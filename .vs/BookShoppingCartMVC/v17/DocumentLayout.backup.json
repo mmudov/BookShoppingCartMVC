@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\dev\\BookShoppingCartMVC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5060771B-CE7C-467E-9CDC-4ECA62B5DF27}|BookShoppingCartMVC\\BookShoppingCartMVC.csproj|d:\\dev\\bookshoppingcartmvc\\bookshoppingcartmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5060771B-CE7C-467E-9CDC-4ECA62B5DF27}|BookShoppingCartMVC\\BookShoppingCartMVC.csproj|solutionrelative:bookshoppingcartmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -35,7 +40,7 @@
         },
         {
           "DockedWidth": 505,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -56,6 +61,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookShoppingCartMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BookShoppingCartMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAE0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-22T14:25:42.131Z",
+              "EditorCaption": ""
             }
           ]
         },

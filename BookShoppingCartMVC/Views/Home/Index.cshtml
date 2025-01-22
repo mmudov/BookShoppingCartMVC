@@ -46,11 +46,42 @@
             }
 			<div class="card-body">
                 <h5 class="card-title">@book.BookName</h5>
-                <p class="card-text">Genre: @book.GenreName</p>
-                <p class="card-text">Author: @book.AuthorName</p>
-                <p class="card-text">Price: @book.Price</p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
+                <p class="card-text">
+                    <b>Genre: </b>@book.GenreName <br />
+                    <b>Author: </b>@book.AuthorName <br />
+                    <b>Price: </b>@book.Price
+                </p>
+                <button type="button" onclick="add(@book.Id)" class="btn btn-primary">Add to cart</button>
             </div>
         </div>
     }
 </div>
+
+@section Scripts
+{
+    <script>
+        async function add(bookId)
+        {
+            var usernameEl = document.getElementById("username");
+            if(usernameEl == null)
+            {
+                window.location.href = "/Identity/Account/Login";
+            }
+            try
+            {
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
+                if(response.status == 200)
+                {
+                    var result = await response.json();
+                    var cartCountEl = document.getElementById("cartCount");
+                    cartCountEl.innerHTML = result;
+                    //window.location.href = "#cartCount";
+                }
+            }
+            catch (err)
+            {
+                console.log(err);
+            }
+        }
+    </script>
+}
