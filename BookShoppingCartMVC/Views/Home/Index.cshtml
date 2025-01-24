@@ -44,14 +44,21 @@
             {
                 <img style="width:100%;height:300px" src=@book.Image class="card-img-top" alt="...">
             }
-			<div class="card-body">
+            <div class="card-body">
                 <h5 class="card-title">@book.BookName</h5>
                 <p class="card-text">
                     <b>Genre: </b>@book.GenreName <br />
                     <b>Author: </b>@book.AuthorName <br />
                     <b>Price: </b>@book.Price
                 </p>
-                <button type="button" onclick="add(@book.Id)" class="btn btn-primary">Add to cart</button>
+                @if(book.Quantity > 0)
+                {
+                    <button type="button" onclick="add(@book.Id)" class="btn btn-primary">Add to cart</button>
+                }
+                else
+                {
+                    <span style="border: 1px solid;padding: 8px 8px;color: red;border-radius: 5px;margin-right: 4px">Out of stock</span>
+                }
             </div>
         </div>
     }

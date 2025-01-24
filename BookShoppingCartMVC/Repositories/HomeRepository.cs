@@ -26,6 +26,10 @@ namespace BookShoppingCartMVC.Repositories
                 from book in _db.Books
                 join genre in _db.Genres
                 on book.GenreId equals genre.Id
+                join stock in _db.Stocks
+                on book.Id equals stock.BookId
+                into book_stocks
+                from bookWithStock in book_stocks.DefaultIfEmpty()
                 where string.IsNullOrWhiteSpace(sTerm) || (book != null && book.BookName.ToLower().StartsWith(sTerm))
                 select new Book
                 {
@@ -35,7 +39,8 @@ namespace BookShoppingCartMVC.Repositories
                     BookName = book.BookName,
                     GenreId = book.GenreId,
                     Price = book.Price,
-                    GenreName = genre.GenreName
+                    GenreName = genre.GenreName,
+                    Quantity = bookWithStock == null ? 0 : bookWithStock.Quantity
                 }
                 ).ToListAsync();
 

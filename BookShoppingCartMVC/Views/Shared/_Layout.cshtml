@@ -25,18 +25,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Home/Privacy">Privacy</a>
                     </li>
-                     @* @if (User.IsInRole(Roles.Admin.ToString()))
+                     @if (User.IsInRole(Roles.Admin.ToString()))
                      {
-                        <li class="nav-item">
-                            <a class="nav-link" href="/AdminOperations/Dashboard">Dashboard</a>
-                        </li>
-                       //<li class="nav-item">
-                          //<a class="nav-link" href="/AdminOperations/AllOrders">Orders</a>
-                        //</li>
-
                         //<li class="nav-item">
-                           //<a class="nav-link" href="/Stock/Index">Stock</a>
+                            //<a class="nav-link" href="/AdminOperations/Dashboard">Dashboard</a>
                         //</li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="/AdminOperations/AllOrders">Orders</a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="/Stock/Index">Stock</a>
+                        </li>
 
                         //<li class="nav-item">
                             //<a class="nav-link" href="/Genre/Index">Genre</a>
@@ -45,7 +45,7 @@
                         //<li class="nav-item">
                             //<a class="nav-link" href="/Book/Index">Books</a>
                         //</li>
-                      } *@
+                      }
                     
                     @*<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -63,9 +63,9 @@
         </div>
     </nav>
     <div class="container">
-        @*<div class="my-2">
+        <div class="my-2">
             <partial name="_Notifications" />
-        </div>*@
+        </div>
         @RenderBody()
     </div>
 </body>

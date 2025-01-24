@@ -23,7 +23,7 @@ namespace BookShoppingCartMVC.Repositories
             try
             {
                 if (string.IsNullOrEmpty(userId))
-                    throw new Exception("User is not logged in");
+                    throw new UnauthorizedAccessException("User is not logged in");
 
                 var cart = await GetCart(userId);
 
@@ -79,20 +79,20 @@ namespace BookShoppingCartMVC.Repositories
             try
             {
                 if (string.IsNullOrEmpty(userId))
-                    throw new Exception("User is not logged in");
+                    throw new UnauthorizedAccessException("User is not logged in");
 
                 var cart = await GetCart(userId);
 
                 if (cart is null)
                 {
-                    throw new Exception("Cart is empty");
+                    throw new InvalidOperationException("Cart is empty");
                 }
 
                 var cartItem = _db.CartDetails.FirstOrDefault(a => a.ShoppingCartId == cart.Id && a.BookId == bookId);
 
                 if (cartItem is null)
                 {
-                    throw new Exception("No items in the cart");
+                    throw new InvalidOperationException("No items in the cart");
                 }
                 else if (cartItem.Quantity == 1)
                 {
@@ -120,9 +120,12 @@ namespace BookShoppingCartMVC.Repositories
             var userId = GetUserId();
 
             if (userId == null)
-                throw new Exception("Invalid user id");
+                throw new InvalidOperationException("Invalid user id");
 
             var shoppingCart = await _db.ShoppingCarts
+                .Include(a => a.CartDetails)
+                .ThenInclude(a => a.Book)
+                .ThenInclude(a => a.Stock)
                 .Include(a => a.CartDetails)
                 .ThenInclude(a => a.Book)
                 .ThenInclude(a => a.Genre)
@@ -167,22 +170,22 @@ namespace BookShoppingCartMVC.Repositories
                 var userId = GetUserId();
 
                 if (string.IsNullOrEmpty(userId))
-                    throw new Exception("User is not logged in");
+                    throw new UnauthorizedAccessException("User is not logged in");
 
                 var cart = await GetCart(userId);
 
                 if (cart is null)
-                    throw new Exception("Invalid cart");
+                    throw new InvalidOperationException("Invalid cart");
 
                 var cartDedatil = _db.CartDetails.Where(a => a.ShoppingCartId == cart.Id).ToList();
 
                 if (cartDedatil.Count == 0)
-                    throw new Exception("Cart is empty");
+                    throw new InvalidOperationException("Cart is empty");
 
                 var pendingRecord = _db.OrderStatuses.FirstOrDefault(s => s.StatusName == "Pending");
 
                 if (pendingRecord is null)
-                    throw new Exception("Order status does not have Pending status");
+                    throw new InvalidOperationException("Order status does not have Pending status");
 
                 var order = new Order
                 {
@@ -211,9 +214,24 @@ namespace BookShoppingCartMVC.Repositories
                     };
 
                     _db.OrderDetails.Add(orderDedatil);
+
+                    var stock = await _db.Stocks.FirstOrDefaultAsync(a => a.BookId == item.BookId);
+
+                    if(stock == null)
+                    {
+                        throw new InvalidOperationException("Stock is null");
+                    }
+
+                    if(item.Quantity > stock.Quantity)
+                    {
+                        throw new InvalidOperationException($"Only {stock.Quantity} item(s) are available in the stock");
+                    }
+
+                    //Decrease the number of quantity from the stock table
+                    stock.Quantity -= item.Quantity;
                 }
 
-                _db.SaveChanges();
+                //_db.SaveChanges();
 
                 //Removing the cartdetails
                 _db.CartDetails.RemoveRange(cartDedatil);
