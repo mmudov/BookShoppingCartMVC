@@ -144,6 +144,7 @@ namespace BookShoppingCartMVC.Repositories
                 from cart in _db.ShoppingCarts
                 join cartDetail in _db.CartDetails
                 on cart.Id equals cartDetail.ShoppingCartId
+                where cart.UserId == userId
                 select new { cartDetail.Id }
                 ).ToListAsync();
 
@@ -157,7 +158,7 @@ namespace BookShoppingCartMVC.Repositories
             return cart;
         }
 
-        public async Task<bool> DoCheckout()
+        public async Task<bool> DoCheckout(CheckoutModel model)
         {
             using var transaction = _db.Database.BeginTransaction();
 
@@ -178,16 +179,22 @@ namespace BookShoppingCartMVC.Repositories
                 if (cartDedatil.Count == 0)
                     throw new Exception("Cart is empty");
 
+                var pendingRecord = _db.OrderStatuses.FirstOrDefault(s => s.StatusName == "Pending");
+
+                if (pendingRecord is null)
+                    throw new Exception("Order status does not have Pending status");
+
                 var order = new Order
                 {
                     UserId = userId,
                     CreateDate = DateTime.UtcNow,
-                    Name = "model.Name",
-                    Email = "model.Email",
-                    MobileNumber = "model.MobileNumber",
-                    Address = "model.Address",
-                    PaymentMethod = "model.PaymentMethod",
-                    OrderStatusId = 1 // Pending
+                    Name = model.Name,
+                    Email = model.Email,
+                    MobileNumber = model.MobileNumber,
+                    Address = model.Address,
+                    PaymentMethod = model.PaymentMethod,
+                    IsPaid = false,
+                    OrderStatusId = pendingRecord.Id
                 };
 
                 _db.Orders.Add(order);
