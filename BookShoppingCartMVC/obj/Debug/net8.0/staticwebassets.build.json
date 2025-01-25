@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CBDlyN5iBxcbZjdldoU5vBj56MNsaUMXGSCtJhdYZ48=",
+  "Hash": "Bd3A/w7HS341KZqrCG4oF5l16N5XCGmp3m7W/9c6IBA=",
   "Source": "BookShoppingCartMVC",
   "BasePath": "_content/BookShoppingCartMVC",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "kydykayu1f",
-      "Integrity": "LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A=",
+      "Fingerprint": "0u79t9emk4",
+      "Integrity": "6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookShoppingCartMVC.styles.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "kydykayu1f",
-      "Integrity": "LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A=",
+      "Fingerprint": "0u79t9emk4",
+      "Integrity": "6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookShoppingCartMVC.bundle.scp.css"
@@ -1888,6 +1888,96 @@
   ],
   "Endpoints": [
     {
+      "Route": "BookShoppingCartMVC.0u79t9emk4.bundle.scp.css",
+      "AssetFile": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookShoppingCartMVC.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 09:16:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0u79t9emk4"
+        },
+        {
+          "Name": "label",
+          "Value": "BookShoppingCartMVC.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c="
+        }
+      ]
+    },
+    {
+      "Route": "BookShoppingCartMVC.0u79t9emk4.styles.css",
+      "AssetFile": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookShoppingCartMVC.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 09:16:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0u79t9emk4"
+        },
+        {
+          "Name": "label",
+          "Value": "BookShoppingCartMVC.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c="
+        }
+      ]
+    },
+    {
       "Route": "BookShoppingCartMVC.bundle.scp.css",
       "AssetFile": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookShoppingCartMVC.bundle.scp.css",
       "Selectors": [],
@@ -1898,7 +1988,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "3093"
         },
         {
           "Name": "Content-Type",
@@ -1906,11 +1996,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A=\""
+          "Value": "\"6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 07:02:59 GMT"
+          "Value": "Sat, 25 Jan 2025 09:16:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1920,97 +2010,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A="
-        }
-      ]
-    },
-    {
-      "Route": "BookShoppingCartMVC.kydykayu1f.bundle.scp.css",
-      "AssetFile": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookShoppingCartMVC.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1137"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 07:02:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "kydykayu1f"
-        },
-        {
-          "Name": "label",
-          "Value": "BookShoppingCartMVC.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A="
-        }
-      ]
-    },
-    {
-      "Route": "BookShoppingCartMVC.kydykayu1f.styles.css",
-      "AssetFile": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookShoppingCartMVC.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1137"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 07:02:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "kydykayu1f"
-        },
-        {
-          "Name": "label",
-          "Value": "BookShoppingCartMVC.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A="
+          "Value": "sha256-6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c="
         }
       ]
     },
@@ -2025,7 +2025,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "3093"
         },
         {
           "Name": "Content-Type",
@@ -2033,11 +2033,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A=\""
+          "Value": "\"6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 07:02:59 GMT"
+          "Value": "Sat, 25 Jan 2025 09:16:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2047,7 +2047,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LBe8TjexYBUxa2zbSkEUHWG1H+STVrsEsr/lfuEAn/A="
+          "Value": "sha256-6PBNp9K4S9l6XECvcy7LQYQBtm9HFaAHmBHQDio5y8c="
         }
       ]
     },

@@ -1,3 +1,94 @@
+/* _content/BookShoppingCartMVC/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
+body[b-3urtpe2esb] {
+    padding: 0;
+    margin: 0;
+}
+
+*[b-3urtpe2esb] {
+    scrollbar-width: thin;
+    scrollbar-color: #486888 #f1f1f1;
+}
+
+    *[b-3urtpe2esb]::-webkit-scrollbar {
+        width: 12px; /* Width of the scrollbar */
+    }
+
+    *[b-3urtpe2esb]::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Color of the track */
+    }
+
+    *[b-3urtpe2esb]::-webkit-scrollbar-thumb {
+        background: #486888; /* Color of the thumb */
+        border-radius: 20px; /* Rounded corners of the thumb */
+    }
+
+        *[b-3urtpe2esb]::-webkit-scrollbar-thumb:hover {
+            background: #486888; /* Color of the thumb on hover */
+        }
+
+.main-contaier[b-3urtpe2esb] {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidenav[b-3urtpe2esb] {
+    height: 100%;
+    width: 250px;
+    background-color: #2c3e50;
+    padding-top: 15px;
+}
+
+.navigation-link[b-3urtpe2esb] {
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+}
+
+.sidenav a:hover[b-3urtpe2esb] {
+    background-color: #476584;
+    color: #ffffff !important;
+}
+
+.sidenav a[b-3urtpe2esb] {
+    padding: 10px 15px;
+}
+
+.right-panel[b-3urtpe2esb] {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.nav-bar[b-3urtpe2esb] {
+    background-color: #486888;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-actions[b-3urtpe2esb] {
+    display: flex;
+    gap: 5px;
+}
+
+    .nav-actions button[b-3urtpe2esb] {
+        border: none;
+        background: none;
+    }
+
+        .nav-actions a:hover[b-3urtpe2esb],
+        .nav-actions button:hover[b-3urtpe2esb] {
+            color: rgb(241, 241, 241);
+        }
+
+.content[b-3urtpe2esb] {
+    padding: 20px;
+}
 /* _content/BookShoppingCartMVC/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

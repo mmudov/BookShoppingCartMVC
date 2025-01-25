@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\dev\\BookShoppingCartMVC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5060771B-CE7C-467E-9CDC-4ECA62B5DF27}|BookShoppingCartMVC\\BookShoppingCartMVC.csproj|d:\\dev\\bookshoppingcartmvc\\bookshoppingcartmvc\\controllers\\adminoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5060771B-CE7C-467E-9CDC-4ECA62B5DF27}|BookShoppingCartMVC\\BookShoppingCartMVC.csproj|solutionrelative:bookshoppingcartmvc\\controllers\\adminoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -40,21 +35,8 @@
         },
         {
           "DockedWidth": 505,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminOperationsController.cs",
-              "DocumentMoniker": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\Controllers\\AdminOperationsController.cs",
-              "RelativeDocumentMoniker": "BookShoppingCartMVC\\Controllers\\AdminOperationsController.cs",
-              "ToolTip": "D:\\dev\\BookShoppingCartMVC\\BookShoppingCartMVC\\Controllers\\AdminOperationsController.cs",
-              "RelativeToolTip": "BookShoppingCartMVC\\Controllers\\AdminOperationsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T08:17:31.642Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
