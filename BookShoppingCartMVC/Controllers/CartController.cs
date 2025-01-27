@@ -58,10 +58,10 @@ namespace BookShoppingCartMVC.Controllers
             bool isCheckedOut = await _cartRepo.DoCheckout(model);
 
             if (!isCheckedOut)
-                //throw new Exception("Something happen in server side");
+                //Throw new Exception("Something happen in server side");
                 return RedirectToAction(nameof(OrderFailure));
 
-            //return RedirectToAction("Index", "Home");
+            //Return RedirectToAction("Index", "Home");
             return RedirectToAction(nameof(OrderSuccess));
         }
 

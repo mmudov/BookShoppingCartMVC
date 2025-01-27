@@ -20,6 +20,7 @@ namespace BookShoppingCartMVC.Repositories
         {
             string userId = GetUserId();
             using var transaction = _db.Database.BeginTransaction();
+
             try
             {
                 if (string.IsNullOrEmpty(userId))
@@ -61,6 +62,7 @@ namespace BookShoppingCartMVC.Repositories
                 }
 
                 _db.SaveChanges();
+
                 transaction.Commit();
             }
             catch (Exception ex)
@@ -76,6 +78,7 @@ namespace BookShoppingCartMVC.Repositories
         {
             //using var transaction = _db.Database.BeginTransaction();
             string userId = GetUserId();
+
             try
             {
                 if (string.IsNullOrEmpty(userId))
@@ -137,7 +140,7 @@ namespace BookShoppingCartMVC.Repositories
 
         public async Task<int> GetCartItemCount(string userId = "")
         {
-            if(!string.IsNullOrEmpty(userId))
+            if(string.IsNullOrEmpty(userId))
             {
                 userId = GetUserId();
             }

@@ -10,11 +10,11 @@ namespace BookShoppingCartMVC.Data
             var userMgr = service.GetService<UserManager<IdentityUser>>();
             var roleMgr = service.GetService<RoleManager<IdentityRole>>();
             
-            //adding some roles to db
+            //Adding some roles to db
             await roleMgr.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
             await roleMgr.CreateAsync(new IdentityRole(Roles.User.ToString()));
 
-            // create admin user
+            //Create admin user
             var admin = new IdentityUser
             {
                 UserName = "admin@test.com",
